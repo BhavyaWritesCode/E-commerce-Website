@@ -1,2 +1,2 @@
 # E-Commerce-Website
-this is a test commit 
+This is a project to showcase my learning on skills i have learned.
