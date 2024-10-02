@@ -27,24 +27,23 @@ header {
 .search-bar {
     width: 400px;
     padding: 10px;
-    border-radius: 20px 20px 20px 20px; /* Rounded ends */
+    border-radius: 20px;
     border: 1px solid rgb(31, 29, 29);
-    color: white; /* White text */
-    background-color: white; /* Dark background for the search bar */
+    color: black;
+    background-color: white;
     margin-right: 15px;
 }
 
 .search-button {
     padding: 10px;
-    background-color: red; /* YouTube red */
-    border: 1px;
-    border-color: #606060;
-    border-radius: 20px 20px 20px 20px; /* Rounded ends */
+    background-color: red;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .search-icon {
-    width: 20px; /* Adjust the icon size */
+    width: 20px;
 }
 
 .profile-icon img {
@@ -83,32 +82,33 @@ header {
 .main-content {
     margin-left: 220px;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid layout */
     gap: 20px;
 }
 
 .video-preview {
-    width: 300px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* To round the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
 
 .thumbnail {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 180px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the thumbnail covers the area without distortion */
 }
 
 .video-details {
     display: flex;
-    align-items: center; /* Aligns the channel logo and video info vertically */
-    margin-top: 10px;
+    align-items: center;
+    padding: 10px;
 }
 
 .channel-picture {
@@ -130,8 +130,8 @@ header {
 .video-title {
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 5px; /* Adds space between the video title and the channel name */
-    color: black; /* White text */
+    margin-bottom: 5px;
+    color: black;
 }
 
 .video-author {
