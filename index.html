@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartify</title>
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube Clone</title>
 </head>
 <body>
-    
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <img src="" alt="YouTube">
+        </div>
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">Search</button>
+        <div class="profile-icon">
+            <img src="profile-icon.png" alt="Profile Icon">
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">History</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content (video feed) -->
+    <main class="main-content">
+        <div class="video-container">
+            <!-- Video 1 -->
+            <div class="video-preview">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Video 1">
+                <div class="video-details">
+                    <div class="channel-picture">
+                        <img src="channel picture/picture-1.jpg" alt="Channel 1">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Playing India's Scariest Bhootni Game (Kamla) | SlayyPop</p>
+                        <p class="video-author">SlayyPop</p>
+                        <p class="video-stats">700K views &#183; 1 day ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-preview">
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Video 2">
+                <div class="video-details">
+                    <div class="channel-picture">
+                        <img src="channel picture/picture-2.jpg" alt="Channel 2">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Squid Game: Season 2 | You're Invited | Netflix</p>
+                        <p class="video-author">Netflix</p>
+                        <p class="video-stats">3.5M views &#183; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-preview">
+                <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="Video 3">
+                <div class="video-details">
+                    <div class="channel-picture">
+                        <img src="channel picture/picture-3.jpg" alt="Channel 3">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Imu's Will | One Piece</p>
+                        <p class="video-author">Crunchyroll</p>
+                        <p class="video-stats">800K views &#183; 10 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

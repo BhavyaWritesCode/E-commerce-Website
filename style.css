@@ -1,0 +1,132 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-preview {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-details {
+    display: flex;
+    align-items: center; /* Aligns the channel logo and video info vertically */
+    margin-top: 10px;
+}
+
+.channel-picture {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.channel-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.video-info {
+    flex-grow: 1;
+}
+
+.video-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds space between the video title and the channel name */
+}
+
+.video-author{
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 3px;
+}
+
+
+.video-stats {
+    font-size: 14px;
+    color: #606060;
+}
