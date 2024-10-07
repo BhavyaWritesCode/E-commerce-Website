@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 215px); /* Aligns categories with the start of the video column */
+    margin-left: 215px; /* Start from where the video section starts */
+    overflow: hidden; /* Ensures it doesn't break the container */
+}
+
+.categories {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    margin-bottom: 10px;  
+}
+
+.categories::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.category-item {
+    padding: 8px 15px; /* Reduced padding for smaller buttons */
+    margin: 5px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 14px; /* Reduced font size */
+    cursor: pointer;
+}
+
+.category-item.active {
+    background-color: black;
+    color: white;
+}
+
+.scroll-left, .scroll-right {
+    background-color: rgba(0, 0, 0, 0.5); /* Keep the contrast for visibility */
+    color: white; /* Ensure text color is visible */
+    padding: 5px; /* Reduced padding */
+    font-size: 18px; /* Reduced font size */
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease;
+    z-index: 10; /* Ensure the scroll buttons stay on top */
+    border-radius: 50%; /* Keep buttons round */
+    width: 30px; /* Reduced width */
+    height: 30px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.scroll-left {
+    left: -10px; /* Positioned just outside of the categories container */
+}
+
+.scroll-right {
+    right: -10px; /* Positioned just outside of the categories container */
+}
+
+.scroll-left.hidden, .scroll-right.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
